@@ -15,6 +15,8 @@
   
   def word_substituter(tweet)
     replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@'  }
+    
+    (tweet.split(' '))
   end 
 
 def bulk_tweet_shortener(tweets)
