@@ -18,6 +18,8 @@
     new_tweet = ''
     (tweet.split(' ')).each do |word|
       if replace_hash.has_key?(word)
+        new_tweet << replace_hash[word]
+      end 
     end 
   end 
 
