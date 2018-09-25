@@ -47,5 +47,6 @@ end
       arr = tweet.split('')
       new_tweet = (arr[0...140]).join('')
     end 
+    new_tweet
   end 
 
