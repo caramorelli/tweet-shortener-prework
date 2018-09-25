@@ -45,7 +45,7 @@ end
   def shortened_tweet_truncator(tweet)
     if tweet.length > 140
       arr = tweet.split('')
-      new_tweet = (arr[0..140]).join('')
+      new_tweet = (arr[0...140]).join('')
     end 
     new_tweet
   end 
