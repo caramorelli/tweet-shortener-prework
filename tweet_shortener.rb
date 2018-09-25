@@ -23,26 +23,8 @@ def bulk_tweet_shortener(tweets)
   end 
 end 
 
-def selective_tweet_shortener()
+def selective_tweet_shortener(tweet)
 end 
-
-  # Question 3
-  describe '#selective_tweet_shortener' do
-    it "shortens tweets that are more than 140 characters" do
-      tweet_one_length = tweet_one.length
-      tweet_three_length = tweet_three.length
-      tweet_five_length = tweet_five.length
-      expect(selective_tweet_shortener(tweet_one).length).to be < tweet_one_length
-      expect(selective_tweet_shortener(tweet_three).length).to be < tweet_three_length
-      expect(selective_tweet_shortener(tweet_five).length).to be < tweet_five_length
-    end
-
-    it "does not shorten tweets that are less than 130 characters" do
-      expect(selective_tweet_shortener(tweet_two).length).to be == tweet_two.length
-      expect(selective_tweet_shortener(tweet_four).length).to be == tweet_four.length
-    end
-
-  end
   
   def shortened_tweet_truncator(tweet)
     if tweet.length > 140
