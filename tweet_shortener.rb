@@ -23,17 +23,7 @@ def bulk_tweet_shortener(tweets)
   end 
 end 
 
-  # Question 2
-  describe '#bulk_tweet_shortener' do  
-    it 'shortens each tweet and prints the results' do
-      expect($stdout).to receive(:puts).with(tweet_one_short)
-      expect($stdout).to receive(:puts).with(tweet_two_short)
-      expect($stdout).to receive(:puts).with(tweet_three_short)
-      expect($stdout).to receive(:puts).with(tweet_four_short)
-      expect($stdout).to receive(:puts).with(tweet_five_short)
-      bulk_tweet_shortener(tweets)
-    end
-  end
+def selective_tweet_shortener()
 
   # Question 3
   describe '#selective_tweet_shortener' do
@@ -52,6 +42,9 @@ end
     end
 
   end
+  
+  def shortened_tweet_truncator(tweet)
+  end 
 
   # Question 4
   describe '#shortened_tweet_truncator' do    
