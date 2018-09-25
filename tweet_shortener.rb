@@ -46,7 +46,8 @@ end
     if tweet.length > 140
       arr = tweet.split('')
       new_tweet = (arr[0...140]).join('')
+      return new_tweet
     end 
-    new_tweet
+    tweet
   end 
 
