@@ -17,7 +17,11 @@
     replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@'  }
   end 
 
-def bulk_tweet_shortener
+def bulk_tweet_shortener(tweets)
+  tweets.each do |tweet|
+    word_substituter(tweet)
+  end 
+  
 end 
 
   # Question 2
