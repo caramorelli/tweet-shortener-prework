@@ -19,6 +19,8 @@
     (tweet.split(' ')).each do |word|
       if replace_hash.has_key?(word)
         new_tweet << replace_hash[word]
+      else 
+        new_tweet << word
       end 
     end 
   end 
