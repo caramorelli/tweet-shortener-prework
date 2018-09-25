@@ -15,7 +15,7 @@
   
   def word_substituter(tweet)
     replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@'  }
-    new_tweet = ''
+    new_tweet = []
     (tweet.split(' ')).each do |word|
       if replace_hash.has_key?(word)
         new_tweet << replace_hash[word]
@@ -23,7 +23,7 @@
         new_tweet << word
       end 
     end 
-    new_tweet
+    new_tweet.join(' ')
   end 
 
 def bulk_tweet_shortener(tweets)
