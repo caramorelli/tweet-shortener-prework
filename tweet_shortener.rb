@@ -44,17 +44,8 @@ def selective_tweet_shortener()
   end
   
   def shortened_tweet_truncator(tweet)
+    if tweet.length > 140
     arr = tweet.split('')
     puts (arr[0...140]).join('')
   end 
 
-  # Question 4
-  describe '#shortened_tweet_truncator' do    
-    it 'truncates tweets over 140 characters after shortening' do
-      expect(shortened_tweet_truncator(tweet_three).length).to be == 140
-    end
-
-    it 'does not shorten tweets shorter than 140 characters.' do
-      expect(shortened_tweet_truncator(tweet_one_short).length).to be == tweet_one_short.length 
-    end
-  end
