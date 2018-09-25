@@ -14,6 +14,7 @@
   let(:tweets) {[tweet_one, tweet_two, tweet_three, tweet_four, tweet_five]}
   
   def word_substituter(tweet)
+    replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b',   }
   end 
 
   # Question 1
