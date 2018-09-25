@@ -15,9 +15,9 @@
   
   def word_substituter(tweet)
     replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@'  }
-    new_tweet
+    new_tweet = ''
     (tweet.split(' ')).each do |word|
-      replace_hash.has_key?(word)
+      if replace_hash.has_key?(word)
     end 
   end 
 
