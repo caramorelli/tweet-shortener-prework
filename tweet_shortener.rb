@@ -44,6 +44,7 @@ def selective_tweet_shortener()
   end
   
   def shortened_tweet_truncator(tweet)
+    tweet.chars.keep_if.with_index {|char, idx| idx < 140  }
   end 
 
   # Question 4
