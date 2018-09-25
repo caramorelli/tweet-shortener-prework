@@ -45,7 +45,7 @@ def selective_tweet_shortener()
   
   def shortened_tweet_truncator(tweet)
     arr = tweet.split('')
-    arr[0..140]
+    (arr[0...140]).join('')
   end 
 
   # Question 4
