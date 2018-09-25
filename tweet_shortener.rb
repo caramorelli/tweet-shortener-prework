@@ -14,7 +14,7 @@
   # let(:tweets) {[tweet_one, tweet_two, tweet_three, tweet_four, tweet_five]}
   
   def word_substituter(tweet)
-    replace_hash = { 'you' => 'u', 'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@', 'too' => '2'  }
+    replace_hash = { 'you' => 'u', 'For' => '4',  'for' => '4', 'and' => '&', 'be' => 'b', 'to' => '2', 'at' => '@', 'too' => '2'  }
     new_tweet = []
     (tweet.split(' ')).each do |word|
       if replace_hash.has_key?(word)
